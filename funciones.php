@@ -13,4 +13,9 @@ function limpiarTexto($texto)
     $texto = preg_replace('/[^\p{L}\s]/u', '', $texto); // Quita puntuación
     return $texto;
 }
+
+function separarPalabras($texto)
+{
+    return preg_split('/\s+/', $texto);
+}
 ?>
